@@ -3,6 +3,7 @@ package com.hasael;
 import com.hasael.common.Exercise;
 import com.hasael.solutions.Add_Two_Numbers_As_LinkedList;
 import com.hasael.solutions.HelloWorld;
+import com.hasael.solutions.Longest_Palindromic_Substring;
 import com.hasael.solutions.Longest_Substring_Without_Repeating_Characters;
 
 import java.util.Arrays;
@@ -29,6 +30,12 @@ public class ExercisesDictionary {
                     "Given a string, find the length of the longest substring without repeating characters. Here is an example solution in Python language.",
                     Arrays.asList("abrkaabcdefghijjxxx"),
                     Arrays.asList(10),
-                    x -> new Longest_Substring_Without_Repeating_Characters().solution(x))
+                    x -> new Longest_Substring_Without_Repeating_Characters().solution(x)),
+            new Exercise(
+                    "Longest Palindromic Substring",
+                    "A palindrome is a sequence of characters that reads the same backwards and forwards. Given a string, s, find the longest palindromic substring in s.",
+                    Arrays.asList("banana","million"),
+                    Arrays.asList("anana","illi"),
+                    x -> new Longest_Palindromic_Substring().solution(x))
     );
 }
