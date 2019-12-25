@@ -1,10 +1,7 @@
 package com.hasael;
 
 import com.hasael.common.Exercise;
-import com.hasael.solutions.Add_Two_Numbers_As_LinkedList;
-import com.hasael.solutions.HelloWorld;
-import com.hasael.solutions.Longest_Palindromic_Substring;
-import com.hasael.solutions.Longest_Substring_Without_Repeating_Characters;
+import com.hasael.solutions.*;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -36,6 +33,12 @@ public class ExercisesDictionary {
                     "A palindrome is a sequence of characters that reads the same backwards and forwards. Given a string, s, find the longest palindromic substring in s.",
                     Arrays.asList("banana","million"),
                     Arrays.asList("anana","illi"),
-                    x -> new Longest_Palindromic_Substring().solution(x))
+                    x -> new Longest_Palindromic_Substring().solution(x)),
+            new Exercise(
+                    "Sock Merchant",
+                    "John works at a clothing store. He has a large pile of socks that he must pair by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.",
+                    Arrays.asList(new int[]{10 ,20 ,20, 10, 10, 30, 50, 10, 20}),
+                    Arrays.asList(3),
+                    x -> new Sock_Merchant().solution(x))
     );
 }
