@@ -13,14 +13,14 @@ public class ExercisesDictionary {
             new Exercise(
                     "hello_world",
                     "Display hello world every time",
-                    Arrays.asList("first","second"),
-                    Arrays.asList("hello world","hello world"),
+                    Arrays.asList("first", "second"),
+                    Arrays.asList("hello world", "hello world"),
                     x -> new HelloWorld().solution(x)),
             new Exercise(
                     "Add two numbers as a linked list",
                     "You are given two linked-lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.",
-                    Arrays.asList(Arrays.asList(new LinkedList<Integer>(Arrays.asList(2,4,3)),new LinkedList<Integer>(Arrays.asList(5,6,4)))),
-                    Arrays.asList(new LinkedList(Arrays.asList(7,0,8))),
+                    Arrays.asList(Arrays.asList(new LinkedList<Integer>(Arrays.asList(2, 4, 3)), new LinkedList<Integer>(Arrays.asList(5, 6, 4)))),
+                    Arrays.asList(new LinkedList(Arrays.asList(7, 0, 8))),
                     x -> new Add_Two_Numbers_As_LinkedList().solution(x)),
             new Exercise(
                     "Longest Substring Without Repeating Characters",
@@ -31,14 +31,15 @@ public class ExercisesDictionary {
             new Exercise(
                     "Longest Palindromic Substring",
                     "A palindrome is a sequence of characters that reads the same backwards and forwards. Given a string, s, find the longest palindromic substring in s.",
-                    Arrays.asList("banana","million"),
-                    Arrays.asList("anana","illi"),
+                    Arrays.asList("banana", "million"),
+                    Arrays.asList("anana", "illi"),
                     x -> new Longest_Palindromic_Substring().solution(x)),
             new Exercise(
-                    "Sock Merchant",
-                    "John works at a clothing store. He has a large pile of socks that he must pair by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.",
-                    Arrays.asList(new int[]{10 ,20 ,20, 10, 10, 30, 50, 10, 20}),
-                    Arrays.asList(3),
-                    x -> new Sock_Merchant().solution(x))
+                    "Counting Valleys",
+                    "Gary is an avid hiker. He tracks his hikes meticulously, paying close attention to small details like topography. During his last hike he took exactly  steps. For every step he took, he noted if it was an uphill, , or a downhill,  step. Gary's hikes start and end at sea level and each step up or down represents a  unit change in altitude. ",
+                    Arrays.asList("UDDDUDUU", "DDUUUUDD", "DUUUDUDDUDDU"),
+                    Arrays.asList(1, 1, 2),
+                    x -> new Counting_Valleys().solution(x))
+
     );
 }
