@@ -39,7 +39,16 @@ public class ExercisesDictionary {
                     "Gary is an avid hiker. He tracks his hikes meticulously, paying close attention to small details like topography. During his last hike he took exactly  steps. For every step he took, he noted if it was an uphill, , or a downhill,  step. Gary's hikes start and end at sea level and each step up or down represents a  unit change in altitude. ",
                     Arrays.asList("UDDDUDUU", "DDUUUUDD", "DUUUDUDDUDDU"),
                     Arrays.asList(1, 1, 2),
-                    x -> new Counting_Valleys().solution(x))
+                    x -> new Counting_Valleys().solution(x)),
+
+            new Exercise(
+                    "Jumping on the Clouds",
+                    "Emma is playing a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. She can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus  or . She must avoid the thunderheads. Determine the minimum number of jumps it will take Emma to jump from her starting postion to the last cloud. It is always possible to win the game.",
+                    Arrays.asList(new int[]{0, 1, 0, 0, 0, 1, 0},
+                            new int[]{0, 0, 1, 0, 0, 1, 0},
+                            new int[]{0, 0, 0, 0, 1, 0}),
+                    Arrays.asList(3, 4, 3),
+                    x -> new Jumping_Clouds().solution(x))
 
     );
 }
