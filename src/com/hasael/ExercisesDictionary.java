@@ -48,7 +48,17 @@ public class ExercisesDictionary {
                             new int[]{0, 0, 1, 0, 0, 1, 0},
                             new int[]{0, 0, 0, 0, 1, 0}),
                     Arrays.asList(3, 4, 3),
-                    x -> new Jumping_Clouds().solution(x))
+                    x -> new Jumping_Clouds().solution(x)),
+            new Exercise(
+                    "Repeated String",
+                    "Lilah has a string, , of lowercase English letters that she repeated infinitely many times.\n" +
+                            "\n" +
+                            "Given an integer, , find and print the number of letter a's in the first  letters of Lilah's infinite string.\n" +
+                            "\n" +
+                            "For example, if the string  and , the substring we consider is , the first  characters of her infinite string. There are  occurrences of a in the substring.",
+                    Arrays.asList(Arrays.asList("aba", 10L), Arrays.asList("abcac", 10L), Arrays.asList("a", 1000L)),
+                    Arrays.asList(7L, 4L, 1000L),
+                    x -> new Repeated_String().solution(x))
 
     );
 }
