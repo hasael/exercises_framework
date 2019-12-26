@@ -58,7 +58,33 @@ public class ExercisesDictionary {
                             "For example, if the string  and , the substring we consider is , the first  characters of her infinite string. There are  occurrences of a in the substring.",
                     Arrays.asList(Arrays.asList("aba", 10L), Arrays.asList("abcac", 10L), Arrays.asList("a", 1000L)),
                     Arrays.asList(7L, 4L, 1000L),
-                    x -> new Repeated_String().solution(x))
+                    x -> new Repeated_String().solution(x)),
+            new Exercise(
+                    "2D Array - DS",
+                    "Complete the function hourglassSum in the editor below. It should return an integer, the maximum hourglass sum in the array.\n" +
+                            "\n" +
+                            "hourglassSum has the following parameter(s):\n" +
+                            "\n" +
+                            "arr: an array of integers",
+                    Arrays.asList(
+                            new int[][]{
+                                    {1, 1, 1, 0, 0, 0},
+                                    {0, 1, 0, 0, 0, 0},
+                                    {1, 1, 1, 0, 0, 0},
+                                    {0, 0, 0, 0, 0, 0},
+                                    {0, 0, 0, 0, 0, 0},
+                                    {0, 0, 0, 0, 0, 0}
+                            },
+                            new int[][]{
+                                    {-9, -9, -9, 1, 1, 1},
+                                    {0, -9, 0, 4, 3, 2},
+                                    {-9, -9, -9, 1, 2, 3},
+                                    {0, 0, 8, 6, 6, 0},
+                                    {0, 0, 0, -2, 0, 0},
+                                    {0, 0, 1, 2, 4, 0}
+                            }),
+                    Arrays.asList(7, 28),
+                    x -> new TWOD_Array_DS().solution(x))
 
     );
 }
