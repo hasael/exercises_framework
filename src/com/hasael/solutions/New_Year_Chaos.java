@@ -15,24 +15,24 @@ public class New_Year_Chaos implements Solution {
         return minimumBribes((int[]) input);
     }
 
-    static int minimumBribes(int[] q) {
+    static int minimumBribes(int[] arr) {
         //Check if any element is more than 2 indexes away from its original
         //If it is return -1
         //Run a bubble sort algorithm on the array and count the number of swaps
         int swapCount = 0;
-        for (int i = 0; i < q.length; i++) {
-            if (i < q[i] - 3) {
+        for (int i = 0; i < arr.length; i++) {
+            if (i < arr[i] - 3) {
                 return -1;
             }
         }
         boolean flag = false;
-        for (int i = 0; i < q.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             flag = false;
-            for (int j = 0; j < q.length -1; j++) {
-                if(q[j] > q[j+1]){
-                    int swap = q[j];
-                    q[j] = q[j+1];
-                    q[j+1] = swap;
+            for (int j = 0; j < arr.length -1; j++) {
+                if(arr[j] > arr[j+1]){
+                    int swap = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = swap;
                     swapCount++;
                     flag = true;
                 }
